@@ -3,9 +3,6 @@ body {
 }
 
 #nav-bar {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
 	background-color: #ffffff;
 	position: fixed;
 	width: 100%;
@@ -14,11 +11,20 @@ body {
 	border-bottom: 2px solid #dddddd;
 }
 
+ul {
+	margin:0;
+}
+
 li {
 	display: inline;
-	padding: 20px;
+	color: black;
+	padding: 10px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	background-color: #ffffff;           
+}
+
+.separator {
+	padding-right: 10px;
 }
 
  h2 {
@@ -26,10 +32,11 @@ li {
 	color: #4aaaa5;
 }
 
-#test1 {
+#aboutTitle{
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
-
+	color: #4aaaa5;
 }
+
 
 #brand{
 	background-color: #4aaaa5;
@@ -40,11 +47,9 @@ li {
 }
 
 .navItems{
-	display: inline;
 	float:right;
-	position: absolute;
-	margin-left: 400px;
-	margin-top: 20px;
+	margin-right: 50px;
+	margin-top: 47px;
 }
 
 p {
@@ -52,16 +57,21 @@ p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+#content{
+	margin-top: 0;
+
+}
+
 #About{
-	position: relative;
+	position: absolute;
 	background-color: #ffffff;
-	clear: both;
-	float:left;
+	float; left;
 	border: 1px solid #dddddd;
 	width: 60%;
 	padding: 20px;
 	margin-top: 150px;
 	margin-left: 20px;
+	z-index: -1;
 	}
 
 #connect{
@@ -83,9 +93,7 @@ p {
 
 #footer{
 	border-top: 10px solid #4aaaa5;
-	margin: 0px 0px 0px 0px;
 	position: fixed;
-	clear:both;
 	bottom:0px;
 	left: 0px;
 	background: #666666;
